@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     SHOPIFY_STOREFRONT_TOKEN: str = ""
     SHOPIFY_ADMIN_ACCESS_TOKEN: str = ""
     SHOPIFY_API_VERSION: str = "2026-07"
+    GMC_DB_PATH: str = ":memory:"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 

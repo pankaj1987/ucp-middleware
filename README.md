@@ -70,4 +70,15 @@ python test_gemini_native.py
 
 Swagger URL:
 http://localhost:8000/docs#/default/upload_gmc_xml_feed_mock_gmc_upload_xml_post
+
+
+#REact UI setup
+npm create vite@latest frontend -- --template react
+cd frontend
+npm install
+npm install lucide-react
+
+#To start front end
+cd frontend
+npm run dev
   
