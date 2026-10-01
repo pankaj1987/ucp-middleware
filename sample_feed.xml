@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Sample Enterprise Merchant Feed</title>
+    <link>http://localhost:8000</link>
+    <description>Product feed for testing local DuckDB indexing</description>
+    <item>
+      <g:id>PROD-XML-001</g:id>
+      <title>Tailored Italian Wool Suit</title>
+      <description>Hand-finished superfine wool 2-piece suit for executive occasions.</description>
+      <link>http://localhost:8000/products/PROD-XML-001</link>
+      <g:price>450.00 USD</g:price>
+      <g:availability>in stock</g:availability>
+    </item>
+    <item>
+      <g:id>PROD-XML-002</g:id>
+      <title>Leather Weekend Duffle Bag</title>
+      <description>Full-grain vegetable-tanned leather carry-on duffle with brass hardware.</description>
+      <link>http://localhost:8000/products/PROD-XML-002</link>
+      <g:price>220.00 USD</g:price>
+      <g:availability>in stock</g:availability>
+    </item>
+  </channel>
+</rss>

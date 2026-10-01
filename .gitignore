@@ -1,0 +1,207 @@
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+
+
+# ============================================================
+# Virtual Environments
+# ============================================================
+
+venv/
+.venv/
+env/
+ENV/
+.env/
+env.bak/
+venv.bak/
+
+
+# ============================================================
+# Environment Variables & Secrets
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# API keys / secrets
+*.pem
+*.key
+secrets/
+secrets.json
+credentials.json
+
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+
+# ============================================================
+# OS Generated Files
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+
+# ============================================================
+# Build / Packaging
+# ============================================================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Python packaging
+MANIFEST
+*.manifest
+*.spec
+
+
+# ============================================================
+# Logs
+# ============================================================
+
+*.log
+logs/
+
+
+# ============================================================
+# Jupyter Notebook
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# Local Databases
+# ============================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+
+# ============================================================
+# Temporary Files
+# ============================================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+
+# ============================================================
+# LangChain / GenAI Local Artifacts
+# ============================================================
+
+# Local vector database / embedding storage
+chroma/
+chroma_db/
+vectorstore/
+vector_store/
+
+# Local document indexes
+*.faiss
+*.index
+
+# Generated documents / datasets
+data/raw/
+data/processed/
+
+# Local experiment outputs
+outputs/
+artifacts/
+
+# LangSmith local files
+.langsmith/
+
+
+# ============================================================
+# Test / Experiment Output
+# ============================================================
+
+test-results/
+results/
+reports/
+
+
+# ============================================================
+# Project-specific local configuration
+# ============================================================
+
+local/
+.local/
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

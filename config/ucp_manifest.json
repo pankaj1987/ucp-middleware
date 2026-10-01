@@ -1,0 +1,86 @@
+{
+  "$schema": "https://ucp.dev/schemas/v2026-08-25/manifest.json",
+  "ucp": {
+    "version": "2026-08-25",
+    "publisher": {
+      "name": "Enterprise Store UCP Gateway",
+      "domain": "localhost:8000"
+    },
+    "services": {
+      "dev.ucp.shopping": {
+        "version": "2026-08-25",
+        "description": "Standard retail commerce, catalog discovery, cart and checkout",
+        "endpoints": {
+          "rest": "http://localhost:8000/api/v1/ucp/shopping",
+          "mcp_sse": "http://localhost:8000/mcp/sse"
+        }
+      },
+      "dev.ucp.actions": {
+        "version": "2026-08-25",
+        "description": "Vendor-agnostic 3DS2 and user-challenge action handler",
+        "endpoints": {
+          "rest": "http://localhost:8000/api/v1/ucp/actions"
+        }
+      }
+    },
+    "capabilities": [
+      {
+        "id": "dev.ucp.shopping.catalog",
+        "version": "2026-08-25",
+        "features": ["semantic_search", "gmc_indexing", "variant_matrix"]
+      },
+      {
+        "id": "dev.ucp.shopping.cart",
+        "version": "2026-08-25",
+        "features": ["promotions", "line_item_modifiers", "multi_currency"]
+      },
+      {
+        "id": "dev.ucp.shopping.checkout",
+        "version": "2026-08-25",
+        "features": ["guest_checkout", "shipping_rates", "pickup_locations"]
+      },
+      {
+        "id": "dev.ucp.shopping.policies",
+        "version": "2026-08-25",
+        "spec": "https://github.com/Universal-Commerce-Protocol/ucp/issues/572",
+        "features": ["immutable_snapshots", "return_policy", "warranty_terms"]
+      },
+      {
+        "id": "dev.ucp.shopping.permalink",
+        "version": "2026-08-25",
+        "spec": "https://github.com/Universal-Commerce-Protocol/ucp/issues/523",
+        "features": ["cart_rehydration", "stateless_tokens", "qr_friendly"]
+      },
+      {
+        "id": "dev.ucp.actions.3ds2",
+        "version": "2026-08-25",
+        "features": ["vendor_neutral_challenge", "iframe_modal", "otp_stepup"]
+      },
+      {
+        "id": "dev.ucp.common.payment.split",
+        "version": "2026-08-25",
+        "features": ["multi_instrument", "milestone_schedules"]
+      },
+      {
+        "id": "dev.ucp.common.location",
+        "version": "2026-08-25",
+        "features": ["store_pickup", "restaurant_counter", "hotel_frontdesk"]
+      },
+      {
+        "id": "dev.ucp.extensions.loyalty",
+        "version": "2026-08-25",
+        "features": ["points_balance_query", "points_redemption"]
+      },
+      {
+        "id": "dev.ucp.extensions.attribution",
+        "version": "2026-08-25",
+        "spec": "https://github.com/Universal-Commerce-Protocol/ucp/issues/391",
+        "features": ["referral_tracking", "agent_platform_context"]
+      }
+    ],
+    "auth": {
+      "mechanisms": ["bearer", "web_bot_auth_v1"],
+      "agent_registration_uri": "http://localhost:8000/api/v1/auth/agent"
+    }
+  }
+}
